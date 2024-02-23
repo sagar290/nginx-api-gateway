@@ -12,10 +12,8 @@ NGINX API GATEWAY
 ### Token Validation
 
 ```bash
-
-curl --request POST \
-  --url http://api-gateway.local/service1/private \
+curl --request GET \
+  --url http://api-gateway.local/service1/ \
   --header 'Authorization: Bearer token'
-  
 ```
 If you don't pass the token or wrong spelling of token It will return 401
