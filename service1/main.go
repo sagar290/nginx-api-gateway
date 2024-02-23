@@ -9,7 +9,7 @@ import (
 func main() {
 	r := gin.Default()
 
-	r.POST("/test", func(c *gin.Context) {
+	r.POST("/private", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"message": "test",
 		})
