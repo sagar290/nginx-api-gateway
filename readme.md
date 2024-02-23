@@ -1,7 +1,7 @@
 NGINX API GATEWAY
 ===
 
-## Installation
+### Installation
 
 - Add ```127.0.0.1    api-gateway.local``` inside ``/etc/hosts ``
 - Clone the project
