@@ -21,5 +21,8 @@ func main() {
 		})
 	})
 
-	r.Run("0.0.0.0:9091")
+	err := r.Run("0.0.0.0:9091")
+	if err != nil {
+		return
+	}
 }
