@@ -9,6 +9,10 @@ NGINX API GATEWAY
 - Run ``` docker-compose up --buiild -d ```
 - curl api-gateway.local
 
+Your service is now accessible by this urls 
+- api-gateway.local/service1
+- api-gateway.local/service2
+
 ### Token Validation
 
 ```bash
