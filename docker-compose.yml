@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  app:
+    image: nginx
+    volumes:
+      - "./docker/nginx/sites/:/etc/nginx/conf.d"
+    ports:
+      - "80:80" 
+    networks:
+      - gateway
+
+  auth:
+    build:
+      context: ./auth
+      dockerfile: DockerFile
+    networks:
+      - gateway
+
+  services1:
+    build:
+      context: ./service1
+      dockerfile: ./DockerFile
+    networks:
+      - gateway
+
+  services2:
+    build:
+      context: ./service2
+      dockerfile: ./DockerFile
+    networks:
+      - gateway
+
+networks:
+  gateway: {}
