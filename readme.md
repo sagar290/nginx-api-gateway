@@ -9,7 +9,7 @@ NGINX API GATEWAY
 - Run ``` docker-compose up --buiild -d ```
 - curl api-gateway.local
 
-Your services are now accessible by this urls 
+Your services are now accessible through these URLs 
 - api-gateway.local/service1
 - api-gateway.local/service2
 
@@ -20,4 +20,6 @@ curl --request GET \
   --url http://api-gateway.local/service1/ \
   --header 'Authorization: Bearer token'
 ```
-If you don't pass the token or wrong spelling of token It will return 401
+If you don't pass the token or the wrong spelling of the token It will return 401
+
+[Click Here for Full Details](https://sagardash.me/make-your-nginx-api-gateway-with-auth-validation-7efd122a18d3)
